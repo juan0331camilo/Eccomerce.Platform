@@ -40,7 +40,14 @@ $ docker-compose -p ecommerce-platform-fullstack --env-file .env.dev up -d --bui
 $ docker ps
 ```
 
-4. Access the application http://localhost:3000
+4. Access the application http://localhost:3000  
+  Access Login
+  email: eve.holt@reqres.in
+  password: cityslicka  
+
+## Login Page
+![architecture](./assets/login.PNG)
+
 ## Index Pages
 ![architecture](./assets/index_page.png)
 
