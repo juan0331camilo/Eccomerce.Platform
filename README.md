@@ -3,8 +3,8 @@ This repository contains the files and commands necessary to deploy the services
 
 1. Clone this repository:
 ```shell
-$ git clone https://github.com/juan0331camilo/Ecommerce.Platform
-$ cd Ecommerce.Platform
+$ git clone https://github.com/juan0331camilo/Eccomerce.Platform
+$ cd Eccomerce.Platform
 ```
 
 2. Build the Docker image:
