@@ -45,7 +45,7 @@ $ docker ps
   email: eve.holt@reqres.in
   password: cityslicka  
 
-#Login Page
+## Login Page
 ![architecture](./assets/login.png)
 ## Index Pages
 ![architecture](./assets/index_page.png)
