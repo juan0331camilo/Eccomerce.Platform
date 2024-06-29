@@ -1,0 +1,38 @@
+version: '3'
+
+services:
+
+  ecommerce-platform:
+    build:
+      context: .
+      dockerfile: Ecommerce.Presentation.Dockerfile
+    image: ecommerce-platform
+    ports:
+      - "3000:8080"
+    environment:
+      - PRODUCTS_SERVICE=${PRODUCTS_SERVICE}
+      - ORDERS_SERVICE=${ORDERS_SERVICE}
+      - ASPNETCORE_ENVIRONMENT=${ASPNETCORE_ENVIRONMENT}
+    depends_on:
+      - ms-product-catalog
+      - ms-order-management
+
+  ms-product-catalog:
+    build:
+      context: .
+      dockerfile: Ecommerce.ProductCatalogMS.WebApi.Dockerfile
+    image: ms-product-catalog
+    ports:
+      - "3001:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=${ASPNETCORE_ENVIRONMENT}
+      
+  ms-order-management:
+    build:
+      context: .
+      dockerfile: Ecommerce.OrderManagementMS.WebApi.Dockerfile
+    image: ms-order-management
+    ports:
+      - "3002:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=${ASPNETCORE_ENVIRONMENT}
