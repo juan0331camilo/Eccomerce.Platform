@@ -46,7 +46,8 @@ $ docker ps
   password: cityslicka  
 
 ## Login Page
-![architecture](./assets/login.png)
+![architecture](./assets/login.PNG)
+
 ## Index Pages
 ![architecture](./assets/index_page.png)
 
